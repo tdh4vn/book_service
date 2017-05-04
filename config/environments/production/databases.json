@@ -1,0 +1,31 @@
+{
+  "orm": {
+    "adapters": {
+      "disk": "sails-disk",
+      "mongo": "sails-mongo"
+    },
+    "defaultConnection": "mongodb",
+    "connections": {
+      "default": {
+        "adapter": "disk",
+        "filePath": ".tmp/",
+        "fileName": "default.db",
+        "migrate": "safe"
+      },
+      "permanent": {
+        "adapter": "disk",
+        "filePath": "./data/",
+        "fileName": "permanent.db",
+        "migrate": "safe"
+      },
+      "mongodb": {
+        "adapter": "mongo",
+        "host": "ds131151.mlab.com",
+        "port": 31151,
+        "user": "tdh4vn",
+        "password": "12345678",
+        "database": "mongo"
+      }
+    }
+  }
+}
